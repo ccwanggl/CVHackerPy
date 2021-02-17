@@ -20,6 +20,8 @@ cv.imshow('Brush', blank)
 cv.circle(blank, (blank.shape[1]//2, blank.shape[0]//2), 40, (255,0,0), thickness=-1)
 cv.imshow('Circle', blank)
 
+cv.line(blank, (0, 0), (blank.shape[1]//2, blank.shape[0]//2), (255,255,255), thickness=4)
+cv.imshow('Line', blank)
 
 cv.waitKey(0)
 cv.destroyAllWindows()
