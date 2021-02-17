@@ -13,6 +13,10 @@ cv.imshow("Gray", gray)
 blur = cv.GaussianBlur(img, (3,3), cv.BORDER_DEFAULT)
 cv.imshow("Blur", blur)
 
+# Edge Cascade
+canny = cv.Canny(img, 125, 175)
+cv.imshow('Canny', canny)
+
 
 cv.waitKey(0)
 cv.destroyAllWindows()
