@@ -6,14 +6,14 @@ cv.imshow('Cat', img)
 
 
 # Translation
-def translate(img, x, y):
+def translate(frame, x, y):
     # -x --> left
     # -y --> Up
     # x --> Right
     # y --> Down
 
     transMat = np.float32([[1, 0, x], [0, 1, y]])
-    dimensions = (img.shape[1], img.shape[0])
+    dimensions = (frame.shape[1], frame.shape[0])
     return cv.warpAffine(img, transMat, dimensions)
 
 
@@ -22,15 +22,15 @@ cv.imshow('Translated image', translated)
 
 
 # Rotation
-def rotate(img, angle, rotPoint=None):
-    (height, width) = img.shape[:2]
+def rotate(frame, angle, rotPoint=None):
+    (height, width) = frame.shape[:2]
 
     if rotPoint is None:
         rotPoint = (width / 2, height / 2)
 
     rotMat = cv.getRotationMatrix2D(rotPoint, angle, 1.0)
     dimensions = (width, height)
-    return cv.warpAffine(img, rotMat, dimensions)
+    return cv.warpAffine(frame, rotMat, dimensions)
 
 
 rotated = rotate(img, 45)

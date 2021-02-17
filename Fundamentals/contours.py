@@ -1,7 +1,6 @@
 import cv2.cv2 as cv
 import numpy as np
 
-
 img = cv.imread('../Resources/Photos/cats.jpg')
 cv.imshow('Cats', img)
 
@@ -10,8 +9,8 @@ blank = np.zeros(img.shape, dtype='uint8')
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 cv.imshow('Gray', gray)
 
-#blur = cv.GaussianBlur(gray, (5, 5), cv.BORDER_DEFAULT)
-#cv.imshow('Blur', blur)
+# blur = cv.GaussianBlur(gray, (5, 5), cv.BORDER_DEFAULT)
+# cv.imshow('Blur', blur)
 #
 #
 canny = cv.Canny(gray, 125, 175)
