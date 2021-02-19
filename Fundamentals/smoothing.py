@@ -12,6 +12,9 @@ gauss = cv.GaussianBlur(img, (3, 3), 0)
 cv.imshow("Gauess", gauss)
 
 
+# Median blur
+median = cv.medianBlur(img, 3)
+cv.imshow("Median", median)
 
 
 
