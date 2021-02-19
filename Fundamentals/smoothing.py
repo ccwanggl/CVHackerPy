@@ -16,7 +16,9 @@ cv.imshow("Gauess", gauss)
 median = cv.medianBlur(img, 3)
 cv.imshow("Median", median)
 
-
+# Bilateral
+bilateral = cv.bilateralFilter(img, 5, 15, 15)
+cv.imshow("Bilateral", bilateral)
 
 cv.waitKey(0)
 cv.destroyAllWindows()
