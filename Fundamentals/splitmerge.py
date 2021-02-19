@@ -14,5 +14,9 @@ print(b.shape)
 print(g.shape)
 print(r.shape)
 
+merged = cv.merge([b,g,r])
+cv.imshow("Merged", merged)
+
+
 cv.waitKey(0)
 cv.destroyAllWindows()
