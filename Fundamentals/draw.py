@@ -6,7 +6,7 @@ cv.imshow('Blank', blank)
 
 # Paint the image a certain color
 blank[:] = 0, 0, 255
-cv.imshow('Red', blank)
+cv.imshow('Green', blank)
 
 # 2 Draw
 cv.rectangle(blank, (0, 0), (300, 400), (0, 255, 0), thickness=2)
