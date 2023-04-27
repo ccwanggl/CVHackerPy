@@ -1,3 +1,8 @@
-group "CVConcepts/LearnOpenCV"
-    include "CVConcepts/src/LearnOpenCV/Hello_OpenCV"
-group ""
+group("CVConcepts/LearnOpenCV")
+include("CVConcepts/src/LearnOpenCV/Hello_OpenCV")
+include("CVConcepts/src/LearnOpenCV/ReadImg")
+include("CVConcepts/src/LearnOpenCV/Mat")
+include("CVConcepts/src/LearnOpenCV/Output_Format")
+include("CVConcepts/src/LearnOpenCV/Core_Component")
+include("CVConcepts/src/LearnOpenCV/DataType")
+group("")

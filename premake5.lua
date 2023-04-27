@@ -24,11 +24,11 @@ workspace "CVHacker"
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories relative to root folder (solution directory)
-IncludeDir = {}
-IncludeDir["OPENCV"] = os.getenv("OpenCV_DIR") .. "/include"
+IncludeDirs = {}
+IncludeDirs["OPENCV"] = os.getenv("OpenCV_DIR") .. "/include"
 
-LinkDir = {}
-LinkDir["OPENCV"] = os.getenv("OpenCV_DIR") .. "/x64/vc15/lib"
+LinkDirs = {}
+LinkDirs["OPENCV"] = os.getenv("OpenCV_DIR") .. "/x64/vc15/lib"
 
 -- projects
 group "Dependencies"
