@@ -1,6 +1,7 @@
 #include "opencv2/core/traits.hpp"
 #include <iostream>
 #include <opencv2/opencv.hpp>
+#include <ostream>
 
 int main() {
   // NOTE: cv::Mat constructors that do not copy data
@@ -20,7 +21,13 @@ int main() {
 
   cv::Mat M(2, 2, CV_8UC3, cv::Scalar(0, 0, 225));
   std::cout << "M = " << std::endl
-            << " " << cv::format(M, cv::Formatter::FMT_NUMPY) 
+            << " " << cv::format(M, cv::Formatter::FMT_NUMPY) << std::endl
+            << "step(The first row bytes): " << M.step << std::endl
+            << "step[0](The first row bytes): " << M.step[0] << std::endl
+            << "step[1](The first element bytes): " << M.step[1] << std::endl
+            << "step1(0)(The first row element channel count): " << M.step1(0)
+            << std::endl
+            << "step1(1)(The element channel count): " << M.step1(1)
             << std::endl
             << std::endl;
 
@@ -29,8 +36,8 @@ int main() {
   mat.create(3, 10, CV_8UC3);
   mat.setTo(cv::Scalar(1.0, 2.0, 3.0));
   std::cout << "mat = " << std::endl
-            << " " << cv::format(mat, cv::Formatter::FMT_PYTHON) 
-			<< std::endl << "step is " << M.step[0] << std::endl
+            << " " << cv::format(mat, cv::Formatter::FMT_PYTHON) << std::endl
+            << "step is " << std::endl
             << std::endl;
 
   // NOTE: cv::Mat constructors that copy data from other cv::Mats
