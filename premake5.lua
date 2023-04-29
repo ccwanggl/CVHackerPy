@@ -8,7 +8,6 @@ workspace "CVHacker"
     {
         "Debug",
         "Release",
-        "Dist"
     }
 
     solution_items

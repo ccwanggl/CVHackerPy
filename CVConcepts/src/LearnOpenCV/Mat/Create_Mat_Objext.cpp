@@ -20,7 +20,8 @@ int main() {
 
   cv::Mat M(2, 2, CV_8UC3, cv::Scalar(0, 0, 225));
   std::cout << "M = " << std::endl
-            << " " << cv::format(M, cv::Formatter::FMT_NUMPY) << std::endl
+            << " " << cv::format(M, cv::Formatter::FMT_NUMPY) 
+            << std::endl
             << std::endl;
 
   // NOTE: PhotoType:
@@ -28,7 +29,8 @@ int main() {
   mat.create(3, 10, CV_8UC3);
   mat.setTo(cv::Scalar(1.0, 2.0, 3.0));
   std::cout << "mat = " << std::endl
-            << " " << cv::format(mat, cv::Formatter::FMT_PYTHON) << std::endl
+            << " " << cv::format(mat, cv::Formatter::FMT_PYTHON) 
+			<< std::endl << "step is " << M.step[0] << std::endl
             << std::endl;
 
   // NOTE: cv::Mat constructors that copy data from other cv::Mats
@@ -59,9 +61,11 @@ int main() {
   printf("Element (3,3) is (%f, %f)\n", m1.at<cv::Vec2f>(3, 3)[0],
          m1.at<cv::Vec2f>(3, 3)[1]);
 
+#if 0
   cv::Mat m2 = cv::Mat::eye(10, 10, cv::DataType<cv::Complexf>::generic_type);
   printf("Element (3,3) is (%f, %f)\n", m2.at<cv::Complexf>(3, 3).re,
-         m1.at<cv::Complexf>(3, 3).im);
+         m2.at<cv::Complexf>(3, 3).im);
+#endif
 
   return 0;
 }
