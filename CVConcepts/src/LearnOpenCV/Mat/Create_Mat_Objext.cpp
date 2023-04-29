@@ -21,7 +21,7 @@ int main() {
 
   cv::Mat M(2, 2, CV_8UC3, cv::Scalar(0, 0, 225));
   std::cout << "M = " << std::endl
-            << " " << cv::format(M, cv::Formatter::FMT_NUMPY) << std::endl
+            << " " << cv::format(M, cv::Formatter::FMT_PYTHON) << std::endl
             << "step(The first row bytes): " << M.step << std::endl
             << "step[0](The first row bytes): " << M.step[0] << std::endl
             << "step[1](The first element bytes): " << M.step[1] << std::endl
@@ -32,12 +32,12 @@ int main() {
             << std::endl;
 
   // NOTE: PhotoType:
-  cv::Mat mat;
-  mat.create(3, 10, CV_8UC3);
-  mat.setTo(cv::Scalar(1.0, 2.0, 3.0));
-  std::cout << "mat = " << std::endl
-            << " " << cv::format(mat, cv::Formatter::FMT_PYTHON) << std::endl
-            << "step is " << std::endl
+  cv::Mat mat1;
+  mat1.create(3, 10, CV_32FC3);
+  mat1.setTo(cv::Scalar(1.0, 2.0, 3.0));
+  std::cout << "mat1 = " << std::endl
+            << " " << cv::format(mat1, cv::Formatter::FMT_PYTHON) << std::endl
+            << std::endl
             << std::endl;
 
   // NOTE: cv::Mat constructors that copy data from other cv::Mats
