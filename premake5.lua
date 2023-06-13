@@ -27,7 +27,7 @@ IncludeDirs = {}
 IncludeDirs["OPENCV"] = os.getenv("OpenCV_DIR") .. "/include"
 
 LinkDirs = {}
-LinkDirs["OPENCV"] = os.getenv("OpenCV_DIR") .. "/x64/vc15/lib"
+LinkDirs["OPENCV"] = os.getenv("OpenCV_DIR") .. "/x64/vc16/lib"
 
 -- projects
 group "Dependencies"

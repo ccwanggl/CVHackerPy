@@ -27,7 +27,7 @@ project "001_imread"
         staticruntime "off"
         links
         {
-            "opencv_world460d.lib"
+            "opencv_world470d.lib"
         }
 
 	filter "configurations:Release"
@@ -37,7 +37,7 @@ project "001_imread"
         staticruntime "On"
         links
         {
-            "opencv_world460.lib"
+            "opencv_world470.lib"
         }
 
 project "002_filters"
@@ -70,7 +70,7 @@ project "002_filters"
         staticruntime "off"
         links
         {
-            "opencv_world460d.lib"
+            "opencv_world470d.lib"
         }
 
 	filter "configurations:Release"
@@ -80,5 +80,5 @@ project "002_filters"
         staticruntime "On"
         links
         {
-            "opencv_world460.lib"
+            "opencv_world470.lib"
         }
