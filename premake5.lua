@@ -24,10 +24,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 -- Include directories relative to root folder (solution directory)
 IncludeDirs = {}
-IncludeDirs["OPENCV"] = "%{wks.location}/CVHacker/vendor/OpenCV/include"
+IncludeDirs["OpenCV"] = "%{wks.location}/CVHacker/vendor/OpenCV/include"
 
 LinkDirs = {}
-LinkDirs["OPENCV"] = "%{wks.location}/CVHacker/vendor/OpenCV/x64/vc16/lib"
+LinkDirs["OpenCV"] = "%{wks.location}/CVHacker/vendor/OpenCV/lib"
 
 -- projects
 group "Dependencies"

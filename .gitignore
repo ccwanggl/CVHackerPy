@@ -1,7 +1,6 @@
 
 # Binaries
 **/bin/
-!vendor/premake/bin/
 bin-int/
 
 # Hazel files
@@ -16,3 +15,5 @@ bin-int/
 
 .cache
 __pycache__
+**/OpenCV/**
+

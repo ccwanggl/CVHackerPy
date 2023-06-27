@@ -14,14 +14,14 @@ project "Canny"
 
     includedirs
     {
-        "%{IncludeDirs.OPENCV}",
+        "%{IncludeDirs.OpenCV}",
     }
 
     libdirs
     {
-        "%{LinkDirs.OPENCV}",
+        "%{LinkDirs.OpenCV}",
     }
-
+    
 	filter "configurations:Debug"
         systemversion "latest"
 		runtime "Debug"
@@ -29,7 +29,7 @@ project "Canny"
         staticruntime "off"
         links
         {
-            "opencv_world460d.lib"
+            "opencv_world470d.lib"
         }
 
 	filter "configurations:Release"
@@ -39,5 +39,5 @@ project "Canny"
         staticruntime "On"
         links
         {
-            "opencv_world460.lib"
+            "opencv_world470.lib"
         }
