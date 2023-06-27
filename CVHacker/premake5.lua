@@ -12,7 +12,7 @@ project "CVHacker"
     pchheader "cvpch.h"
     pchsource "%{wks.location}/CVHacker/src/cvpch.cpp"
 
-    files 
+    files
     {
         "%{wks.location}/CVHacker/src/CVHacker/**.h",
         "%{wks.location}/CVHacker/src/CVHacker/**.cpp",
@@ -22,28 +22,8 @@ project "CVHacker"
     }
 
 
-    defines
-    {
-    }
-
-    includedirs
-    {
-        "src", 
-    }
-
-    links 
-    {
-        
-    }
-
-    libdirs
-    {
-    }
-
-
     filter "system:windows"
         systemversion "latest"
-
 
     filter "configurations:Debug"
         defines "CV_DEBUG"
