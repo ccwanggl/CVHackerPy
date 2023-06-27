@@ -12,12 +12,17 @@ project "001_imread"
     }
     includedirs
     {
-        "%{IncludeDirs.OPENCV}",
+        "%{IncludeDirs.OpenCV}",
     }
 
     libdirs
     {
-        "%{LinkDirs.OPENCV}",
+        "%{LinkDirs.OpenCV}",
+    }
+
+    debugenvs
+    {
+      "path=" .. os.getenv("path") .. ";" .. "%{dllDirs.OpenCV}"
     }
 
 	filter "configurations:Debug"
@@ -55,12 +60,17 @@ project "002_filters"
 
     includedirs
     {
-        "%{IncludeDirs.OPENCV}",
+        "%{IncludeDirs.OpenCV}",
     }
 
     libdirs
     {
-        "%{LinkDirs.OPENCV}",
+        "%{LinkDirs.OpenCV}",
+    }
+
+    debugenvs
+    {
+      "path=" .. os.getenv("path") .. ";" .. "%{dllDirs.OpenCV}"
     }
 
 	filter "configurations:Debug"
