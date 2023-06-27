@@ -12,7 +12,7 @@ int main(int argc, char **argv) {
   cv::namedWindow("Gray");
   cv::namedWindow("Canny");
 
-  img_rgb = cv::imread("../Data/lena.jpg");
+  img_rgb = cv::imread("../../Data/lena.jpg");
 
   cv::cvtColor(img_rgb, img_gry, cv::COLOR_BGR2GRAY);
   cv::imshow("Gray", img_gry);
