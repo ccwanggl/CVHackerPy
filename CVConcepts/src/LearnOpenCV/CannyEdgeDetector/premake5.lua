@@ -24,7 +24,7 @@ project "Canny"
     
     debugenvs
     {
-      "path=" .. os.getenv("path") .. ";" .. "%{dllDirs.OpenCV}" .. ";" .. "%{wks.location}/DataSet"
+      "path=" .. os.getenv("path") .. ";" .. "%{dllDirs.OpenCV}"
     }
 
 	filter "configurations:Debug"
