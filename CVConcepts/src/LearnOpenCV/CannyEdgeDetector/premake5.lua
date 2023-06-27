@@ -22,6 +22,11 @@ project "Canny"
         "%{LinkDirs.OpenCV}",
     }
     
+    debugenvs
+    {
+      "path=" .. os.getenv("path") .. ";" .. "%{dllDirs.OpenCV}"
+    }
+
 	filter "configurations:Debug"
         systemversion "latest"
 		runtime "Debug"

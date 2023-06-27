@@ -29,6 +29,9 @@ IncludeDirs["OpenCV"] = "%{wks.location}/CVHacker/vendor/OpenCV/include"
 LinkDirs = {}
 LinkDirs["OpenCV"] = "%{wks.location}/CVHacker/vendor/OpenCV/lib"
 
+dllDirs = {}
+dllDirs["OpenCV"] = "%{wks.location}/CVHacker/vendor/OpenCV/bin"
+
 -- projects
 group "Dependencies"
     include "vendor"
