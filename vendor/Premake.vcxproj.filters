@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{61705900-4DFC-870B-B6AA-880BA255880B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts">
+      <UniqueIdentifier>{6856EC65-D416-689C-9D51-B11909D1AC78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src">
+      <UniqueIdentifier>{7F089D97-EB1E-9B2D-3496-264FA0EB6BB5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV">
+      <UniqueIdentifier>{EB2E579C-5747-3EC6-20F4-CD5F8CCBD25F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\CannyEdgeDetector">
+      <UniqueIdentifier>{028AB2EF-6EC5-12B3-77BA-8F42E37497E3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\Core_Component">
+      <UniqueIdentifier>{75B4104E-61C7-10A7-0AB1-ED93F6A2ADF4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\DataType">
+      <UniqueIdentifier>{964AC66E-829C-9D5E-6BBB-DA6E57ACB647}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\Hello_OpenCV">
+      <UniqueIdentifier>{389A472F-2402-0EFD-8D6D-221379F424E9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\Mat">
+      <UniqueIdentifier>{BCC6F540-2835-4BC0-711E-06C0DDCB405C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\Output_Format">
+      <UniqueIdentifier>{9301CE18-FF66-619F-883F-0378F4A3560E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\PlayWithTinker">
+      <UniqueIdentifier>{39C41892-25D7-18EB-CEC0-F5D7BAB2B538}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\ReadImgWithArgs">
+      <UniqueIdentifier>{9CBB1B0D-082C-1E86-D14A-980E3D7A5687}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\Transformation">
+      <UniqueIdentifier>{71544B52-5D67-4BAB-0651-2898F242E8F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\VideoCapture">
+      <UniqueIdentifier>{457EF460-31E6-BA2E-9A51-CF4486D8D11A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVConcepts\src\LearnOpenCV\pyrDown">
+      <UniqueIdentifier>{EDE2E77D-59A7-E66D-220D-17388E9082A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\CVHacker">
+      <UniqueIdentifier>{B720235F-23D6-9B54-ACCA-952B187F9258}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\CVConcepts\src\LearnOpenCV\CannyEdgeDetector\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\CannyEdgeDetector</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\Core_Component\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\Core_Component</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\DataType\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\DataType</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\Hello_OpenCV\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\Hello_OpenCV</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\Mat\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\Mat</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\Output_Format\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\Output_Format</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\PlayWithTinker\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\PlayWithTinker</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\ReadImgWithArgs\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\ReadImgWithArgs</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\Transformation\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\Transformation</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\VideoCapture\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\VideoCapture</Filter>
+    </None>
+    <None Include="..\CVConcepts\src\LearnOpenCV\pyrDown\premake5.lua">
+      <Filter>..\CVConcepts\src\LearnOpenCV\pyrDown</Filter>
+    </None>
+    <None Include="..\CVHacker\premake5.lua">
+      <Filter>..\CVHacker</Filter>
+    </None>
+    <None Include="..\premake5.lua">
+      <Filter>..</Filter>
+    </None>
+    <None Include="premake5.lua" />
+  </ItemGroup>
+</Project>
